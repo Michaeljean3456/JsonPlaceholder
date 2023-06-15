@@ -1,3 +1,36 @@
 body{
     text-align: center;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  /* Apply responsive styles using CSS Grid */
+  @media (max-width: 767px) {
+    table thead {
+      display: none; /* Hide the table header on small screens */
+    }
+  
+    table {
+      display: grid;
+      grid-template-columns: 1fr; /* Display table content in a single column */
+    }
+  
+    table td:before {
+      content: attr(data-label); /* Use pseudo-element to display table headers */
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+  }

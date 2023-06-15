@@ -34,16 +34,33 @@
           </nav>
     </header>
     <main>
-        <h1>Todo Page</h1>
-        <div>
+        <h1>Users Page</h1>
+        
             <label for="todoInputBox"></label>
             <input type="number" id="todoInputBox">
             <button type="button" id="submitBtn">Submit</button>
-            <p id="todoIdOutput"></p>
+            <div id="toDoDiv">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Username</th>
+                      <th>Email</th>
+                      <th>Phone</th>
+                      <th>Website</th>
+                      <th>Company name</th>
+
+                    </tr>
+                  </thead>
+                  <tbody id="usersListingTable">
+                  </tbody>
+          
+                </table>
+              </div>
         </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="scripts/todo.js"></script>
+    <script src="scripts/user.js"></script>
   </body>
 </html>
